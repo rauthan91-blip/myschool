@@ -498,3 +498,127 @@ footer{
     }
 
 }
+@media(max-width:768px){
+
+.hero{
+
+    height:70vh;
+
+}
+
+.hero-content h1{
+
+    font-size:30px;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+
+}
+
+}
+@media(max-width:768px){
+
+    /* About Section */
+
+    .about{
+
+        flex-direction:column;
+        padding:30px 20px;
+
+    }
+
+    .about-image,
+    .about-content{
+
+        width:100%;
+
+    }
+
+
+    /* Facilities */
+
+    .facility-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .facilities{
+
+        padding:40px 20px;
+
+    }
+
+
+    /* Teachers */
+
+    .teacher-container{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+
+    .teacher-card{
+
+        width:90%;
+
+    }
+
+
+    /* Gallery */
+
+    .gallery-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .gallery{
+
+        padding:40px 20px;
+
+    }
+
+
+    /* News */
+
+    .news-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* Contact */
+
+    .contact-container{
+
+        flex-direction:column;
+
+    }
+
+
+    .contact{
+
+        padding:40px 20px;
+
+    }
+
+
+    /* Footer */
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+        text-align:center;
+
+    }
+
+}
