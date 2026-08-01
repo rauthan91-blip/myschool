@@ -573,18 +573,25 @@ footer{
 
     /* Gallery */
 
-    .galary-container{
-
-        grid-template-columns:1fr;
-
-    }
-
+    /* Mobile Gallery */
+@media (max-width:768px){
 
     .galary{
-
         padding:40px 20px;
-
     }
+
+    .galary-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .galary-item img{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+    }
+
+}
 
 
     /* News */
