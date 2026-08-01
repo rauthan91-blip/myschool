@@ -172,11 +172,11 @@ border-radius: 15px;
     background:#084298;
 
 }
-.Facilities{
+.facilities{
     padding: 80px;
     background: #f5f5f5;
 }
-.Facilities h2{
+.facilities h2{
     text-align: center;
     font-size: 40px;
     color:#0d6efd;
@@ -573,14 +573,14 @@ footer{
 
     /* Gallery */
 
-    .gallery-container{
+    .galary-container{
 
         grid-template-columns:1fr;
 
     }
 
 
-    .gallery{
+    .galary{
 
         padding:40px 20px;
 
