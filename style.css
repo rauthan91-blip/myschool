@@ -44,34 +44,116 @@ nav ul li a{
 nav ul li a:hover{
     color: yellow;
 }
-.hero{
 
-    height:90vh;
-
-    background:url("Images/school.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
+  .hero {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
 
 }
+.slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.6s ease;
+}
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
-.hero-content{
+    z-index: 10;
 
-    background:rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
 
-    padding:40px;
+    border: none;
+    padding: 12px 18px;
 
-    border-radius:10px;
+    font-size: 25px;
+    cursor: pointer;
 
+    border-radius: 5px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.dots {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 10;
+
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    opacity: 0.6;
+}
+
+.dot.active {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.hero-content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 5;
+
+    text-align: center;
+
+    color: white;
+
+    width: 90%;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 25px;
 }
 
 .hero-content h1{
@@ -172,11 +254,11 @@ border-radius: 15px;
     background:#084298;
 
 }
-.facilities{
+.Facilities{
     padding: 80px;
     background: #f5f5f5;
 }
-.facilities h2{
+.Facilities h2{
     text-align: center;
     font-size: 40px;
     color:#0d6efd;
@@ -573,25 +655,18 @@ footer{
 
     /* Gallery */
 
-    /* Mobile Gallery */
-@media (max-width:768px){
+    .gallery-container{
 
-    .galary{
-        padding:40px 20px;
-    }
-
-    .galary-container{
         grid-template-columns:1fr;
-        gap:20px;
+
     }
 
-    .galary-item img{
-        width:100%;
-        height:auto;
-        object-fit:cover;
-    }
 
-}
+    .gallery{
+
+        padding:40px 20px;
+
+    }
 
 
     /* News */
